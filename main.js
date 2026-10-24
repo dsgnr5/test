@@ -95,7 +95,7 @@
   // message pre-filled. To collect submissions instead, point the form at
   // Formspree (action="https://formspree.io/f/<id>" method="POST") or add the
   // `data-netlify="true"` attribute when hosting on Netlify, and remove this handler.
-  const CONTACT_EMAIL = "hello@example.com";
+  const CONTACT_EMAIL = "nikitailab@gmail.com";
   const form = $("#contact-form");
   const note = $(".form__note", form);
   form?.addEventListener("submit", (e) => {
