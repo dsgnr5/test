@@ -5,7 +5,7 @@ A fast, dependency-free personal website for a one-person business. It's plain H
 ```
 index.html   page content
 style.css    design (colors and fonts live in the :root tokens at the top)
-main.js      theme toggle, mobile menu, animations, project filter, contact form
+main.js      theme toggle, sticky nav, scroll-reveal animations
 ```
 
 ## Preview locally
@@ -16,21 +16,12 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Make it yours
 
-1. **Name and brand:** search `index.html` for "Jordan" and "J" (logo mark and favicon) and replace them.
-2. **Email:** replace `hello@example.com` in both `index.html` and `main.js` (`CONTACT_EMAIL`).
-3. **Accent color:** change `--accent` in `style.css` (it's set in both the light and dark theme blocks).
-4. **Services, process, pricing and FAQ:** edit the text in place.
-5. **Projects:** each `.project` uses `data-cat` (`brand`, `web`, `product`) for filtering. To use a screenshot instead of a gradient, put an `<img>` inside `.project__img`.
-6. **Social links:** fill in the `href="#"` links in the About section.
-7. **Availability:** update the "Booking projects for…" badge and the matching FAQ answer.
+1. **Name and brand:** search `index.html` for "Nikita" and the "N" logo mark and favicon.
+2. **Accent color:** change `--accent` and `--accent-2` (gradient) in `style.css`, in both the light and dark theme blocks.
+3. **What I'm Working On / Tools I Love / Find Me:** each section is a plain `<ul class="list">`. Edit the items in place.
+4. **Links:** replace every `href="#"` (project links, Twitter, LinkedIn, GitHub, and the header/footer icons) with real URLs.
 
-> ⚠️ **The client names, logos, stats and testimonials are placeholders.** Replace them with your real clients and real quotes (with permission) before you publish, or remove those sections.
-
-## Contact form
-
-By default, the form opens the visitor's email app with the message pre-filled. To receive submissions directly, use one of these:
-- **Formspree:** add `action="https://formspree.io/f/<your-id>" method="POST"` to the form and delete the submit handler in `main.js`.
-- **Netlify Forms:** add `data-netlify="true"` and `name="contact"` to the form when you host on Netlify.
+> ⚠️ **The project names and descriptions are placeholders.** Replace them with your real work before you publish.
 
 ## Deploy (free)
 
